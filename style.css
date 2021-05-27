@@ -17,13 +17,41 @@ body {
 
 .logo {
   position: fixed;
-  padding: 1vw;
-  z-index: 999;
+  z-index: 3;
 }
 
 .logo img {
-  width: 150px;
+  padding: 2%;
+  width: 22%;
   height: auto;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+nav ul {
+  background-color: rgba(0, 0, 0, .7);
+  line-height: 10vh;
+  list-style: none;
+  text-align: end;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 3vw;
+}
+
+nav ul li:last-child{
+  padding-right: 6vw;
+}
+
+nav a{
+  color: #fff;
+  font: 20px "Times New Roman", Times, serif;
 }
 
 .name-main {
