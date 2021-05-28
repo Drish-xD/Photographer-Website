@@ -11,9 +11,9 @@
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- Scroll reveal -->
@@ -25,36 +25,37 @@
     <!-- PARALLAX -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="script.js"></script>
     <title>Aryan Sharma</title>
-  </head> 
+  </head>
   <body>
     <section class="home" id="home">
-        <div class="logo">
-          <img src="Assets/image.webp" class="img-responsive"/>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#home">HOME</a>
-            </li>
-            <li>
-              <a href="#home">ABOUT</a>
-            </li>
-            <li>
-              <a href="#home">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#home">CONTACTS</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="name-main">
-          <h1>ARYAN SHARMA</h1>
-        </div>
-        <div class="image-main">
-          <img src="Assets/main.jpg" class="img-responsive"/>
-        </div>
+      <div class="logo">
+        <img src="Assets/image.webp" class="img-responsive" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#contacts">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="name-main">
+        <h1>ARYAN SHARMA</h1>
+      </div>
+      <div class="image-main">
+        <img src="Assets/main.jpg" class="img-responsive" />
+      </div>
     </section>
 
     <section class="about" id="about">
@@ -62,7 +63,11 @@
         <div class="row">
           <div class="about-title col-lg-6">
             <h1>About me</h1>
-            <span class="material-icons">person</span>
+            <span
+              class="iconify"
+              data-icon="mdi:account"
+              data-inline="false"
+            ></span>
           </div>
           <div class="about-text col-lg-6">
             <h3>
@@ -88,7 +93,11 @@
         <div class="container-fluid">
           <div class="row">
             <div class="camera-icon col-lg-2">
-              <span class="material-icons">camera</span>
+              <span
+                class="iconify"
+                data-icon="ri:camera-lens-fill"
+                data-inline="true"
+              ></span>
             </div>
             <div class="capture col-lg-10">
               <h1>CAPTURES</h1>
@@ -99,36 +108,97 @@
       <div class="container-fluid">
         <div class="row">
           <div class="pic col-lg-6">
-            <img src="Assets/1.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/1.jpg" class="picture img-responsive fit-image" />
           </div>
           <div class="pic col-lg-6">
-            <img src="Assets/2.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/2.jpg" class="picture img-responsive fit-image" />
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <img src="Assets/5.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/5.jpg" class="picture img-responsive fit-image" />
           </div>
           <div class="pic pic-4 col-lg-6">
-            <img src="Assets/3.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/3.jpg" class="picture img-responsive fit-image" />
           </div>
         </div>
         <div class="row">
           <div class="pic pic-5 col-lg-6">
-            <img src="Assets/4.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/4.jpg" class="picture img-responsive fit-image" />
           </div>
           <div class="pic pic-6 col-lg-6">
-            <img src="Assets/6.jpg" class="picture img-responsive fit-image">
+            <img src="Assets/6.jpg" class="picture img-responsive fit-image" />
           </div>
         </div>
       </div>
     </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="contacts-title col-lg-6"><h1>Reach out</h1></div>
+          <div class="contacts-text col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              perspiciatis aliquam natus earum laboriosam nemo temporibus animi
+              voluptatem assumenda numquam?
+            </p>
+          </div>
+        </div>
+
+        <div class="contacts-social">
+          <div class="row">
+            <div class="insta col-lg-2">
+              <a
+                href="#"
+                data-toggle="tooltip" data-placement="top" 
+                title="Professioanlism"
+                ><span
+                  class="iconify"
+                  data-icon="ant-design:instagram-filled"
+                  data-inline="false"
+                ></span
+              ></a>
+            </div>
+            <div class="yt col-lg-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Youtube"
+                ><span
+                  class="iconify"
+                  data-icon="akar-icons:youtube-fill"
+                  data-inline="false"
+                ></span
+              ></a>
+            </div>
+            <div class="twitter col-lg-2">
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="twitter"
+                ><span
+                  class="iconify"
+                  data-icon="akar-icons:twitter-fill"
+                  data-inline="false"
+                ></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+     
+    </script>
 
     <footer>
       <div class="container-fluid">
         &copy; Copyrights 2021 by Aryan Sharma. All Rights Reserved.
       </div>
     </footer>
-
   </body>
 </html>
