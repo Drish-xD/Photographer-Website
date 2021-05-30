@@ -97,8 +97,9 @@ nav a:hover {
 .image-main img {
   width: 80%;
   height: auto;
+  filter: grayscale(50%) contrast(120%) brightness(90%);
 }
-
+x
 .about {
   width: 100%;
   height: auto;
