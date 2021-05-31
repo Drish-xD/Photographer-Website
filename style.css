@@ -263,7 +263,7 @@ nav .navbar-nav a:hover {
 .picture {
   width: 50%;
   height: auto;
-  margin: 100px 0;
+  margin: 80px 0;
   border: 1.5rem solid #eeeeee;
   box-shadow: 5px 5px 20px rgba(200, 200, 200, 0.4);
 }
@@ -272,6 +272,7 @@ nav .navbar-nav a:hover {
   .picture {
     width: 80%;
     border: 1rem solid #eeeeee;
+    margin: 40px 0;
   }
 }
 
@@ -342,5 +343,6 @@ footer {
   background-color: #111111;
   padding: 25px;
   font-family: Impact, Haettenschweiler;
+  font-weight: 400;
   color: #f0f8ff;
 }
