@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* navbar */
@@ -35,9 +36,10 @@ nav .navbar-brand{
 
 nav .navbar-nav a {
   text-decoration: none;
+  letter-spacing: .8mm;
   color: #fafafa;
-  font: 23px 'Oswald', sans-serif;
-  margin: 0 1.5vw;
+  font: 600 23px 'Oswald', sans-serif;
+  margin: 0 3vw;
 }
 
 nav .navbar-nav a:hover {
@@ -178,26 +180,40 @@ nav .navbar-nav a:hover {
 .projects {
   width: 100%;
   height: auto;
-  padding: 10vh 0;
+  padding-bottom: 100px;
   background-color: #0f0f0f;
   text-align: center;
+}
+
+.capture-heading {
+  padding: 100px 0;
 }
 
 .camera-icon .iconify {
   color: #fff;
   font-size: 100px;
+  text-align: center;
 }
 
 .projects h1 {
-  padding-bottom: 10vh;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 100px;
   font-family: 'Oswald', sans-serif;
-  font-size: 100px;
+  text-align: center;
   color: #fff;
 }
 
 .picture {
-  width: 80%;
+  width: 50%;
   height: auto;
+  padding: 100px 0;
+}
+
+@media (max-width: 980px) {
+  .picture {
+    width: 60%;
+  }
 }
 
 /* contacts */
