@@ -123,6 +123,18 @@ nav .navbar-nav a:hover {
   font-weight: 600;
 }
 
+.splitting .char {
+  animation: slide-in 1.2s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(2em) rotate(.2turn) scale(0.5);
+    opacity: 0;
+  }
+}
+
 .image-main {
   position: absolute;
   top: 50%;
@@ -204,16 +216,43 @@ nav .navbar-nav a:hover {
   color: #fff;
 }
 
+.pic {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .picture {
   width: 50%;
   height: auto;
-  padding: 100px 0;
+  margin: 100px 0;
+  border: 1.5rem solid #eeeeee;
+  box-shadow: 5px 5px 20px rgba(200, 200, 200, 0.4);
 }
 
 @media (max-width: 980px) {
   .picture {
     width: 60%;
   }
+}
+
+[data-aos="img-left"] {
+  opacity: 0;
+  transform: translateY(10em);
+  transition-property: transform, opacity;
+}
+[data-aos="img-left"].aos-animate {
+  opacity: 1;
+  transform: translateY(0em) rotate(-5deg);
+}
+
+[data-aos="img-right"] {
+  opacity: 0;
+  transform: translateY(10em);
+  transition-property: transform, opacity;
+}
+[data-aos="img-right"].aos-animate {
+  opacity: 1;
+  transform: translateY(0em) rotate(5deg);
 }
 
 /* contacts */
