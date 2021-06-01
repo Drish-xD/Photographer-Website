@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Trispace&display=swap');
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
 
 @font-face {
   font-family: 'Signature';
   src: url('Fonts/Signature.woff2') format('woff2'),
       url('Fonts/Signature.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Cosi';
+  src: url('Fonts/Cosi_Azure.woff2') format('woff2'),
+      url('Fonts/Cosi_Azure.woff') format('woff');
+}
+
+/* Code */
 
 * {
   margin: 0;
@@ -20,6 +29,8 @@ body {
   height: auto;
   overflow-x: hidden;
 }
+
+/* custom Scrollbar */
 
 ::-webkit-scrollbar{
   width: 10px;
@@ -50,23 +61,18 @@ nav .navbar-brand{
   font: 20px "Signature";
 }
 
-@media (max-width: 980px) {
-  nav .navbar-brand{
-  font-size: 15px;
-  }
-}
-
 .nav-item {
   text-align: center;
 }
 
 nav .navbar-nav a {
   text-decoration: none;
-  letter-spacing: .8mm;
+  letter-spacing: .8mm; 
   color: #fafafa;
-  font: 400 23px 'Oswald', sans-serif;
+  font: 400 20px 'Cosi', sans-serif;
   margin: 5px 3vw;
 }
+
 
 nav .navbar-nav a:hover {
   text-decoration: none;
@@ -143,21 +149,21 @@ nav .navbar-nav a:hover {
 }
 
 .name-main h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   color: #fafafa;
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Cosi';
   text-align: center;
   font-weight: 600;
 }
 
 .splitting .char {
   animation: slide-in 1.2s cubic-bezier(.5, 0, .5, 1) both;
-  animation-delay: calc(60ms * var(--char-index));
+  animation-delay: calc(80ms * var(--char-index));
 }
 
 @keyframes slide-in {
   from {
-    transform: translateY(2em) rotate(.2turn) scale(0.5);
+    transform: translateY(1em) rotate(50deg) scale(0);
     opacity: 0;
   }
 }
@@ -177,16 +183,6 @@ nav .navbar-nav a:hover {
   filter: grayscale(50%) contrast(120%) brightness(90%);
 }
 
-@media (max-width: 980px) {
-  .image-main img {
-    width: 80%;
-  }
-  
-  .name-main h1 {
-    font-size: 10vw;
-  }
-}
-
 /* about-page */
 
 .about {
@@ -199,7 +195,7 @@ nav .navbar-nav a:hover {
 .about-title h1 {
   text-transform: uppercase;
   font-size: 70px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cosi', sans-serif;
   text-align: center;
 }
 
@@ -213,7 +209,7 @@ nav .navbar-nav a:hover {
 }
 
 .about-text h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Trispace', sans-serif;
   letter-spacing: .05em;
   line-height: 40px;
   font-size: 25px;
@@ -237,7 +233,7 @@ nav .navbar-nav a:hover {
 }
 
 .capture-heading {
-  padding: 100px 0;
+  padding: 80px 0 20px 0;
 }
 
 .camera-icon .iconify {
@@ -250,7 +246,7 @@ nav .navbar-nav a:hover {
   text-transform: uppercase;
   font-size: 70px;
   line-height: 100px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cosi', sans-serif;
   text-align: center;
   color: #fff;
 }
@@ -268,13 +264,7 @@ nav .navbar-nav a:hover {
   box-shadow: 5px 5px 20px rgba(200, 200, 200, 0.4);
 }
 
-@media (max-width: 980px) {
-  .picture {
-    width: 80%;
-    border: 1rem solid #eeeeee;
-    margin: 40px 0;
-  }
-}
+/* Custom Animation  */
 
 [data-aos="img-left"] {
   opacity: 0;
@@ -308,7 +298,7 @@ nav .navbar-nav a:hover {
 .contacts-title h1 {
   text-transform: uppercase;
   font-size: 70px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cosi', sans-serif;
   text-align: center;
 }
 
@@ -345,4 +335,42 @@ footer {
   font-family: Impact, Haettenschweiler;
   font-weight: 400;
   color: #f0f8ff;
+}
+
+
+@media (max-width: 980px) {
+
+  nav .navbar-brand{
+    font-size: 15px;
+  }
+
+  .image-main img {
+    width: 80%;
+  }
+  
+  .name-main h1 {
+    font-size: 9vw;
+  }
+
+  .picture {
+    width: 80%;
+    border: 1rem solid #eeeeee;
+    margin: 40px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-title h1 {
+    font-size: 15vw;
+  }
+
+  .projects h1 {
+    font-size: 15vw;
+  }
+
+  .contacts-title h1 {
+    font-size: 15vw;
+  }
+
 }
