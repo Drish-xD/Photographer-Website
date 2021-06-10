@@ -149,7 +149,7 @@ nav .navbar-nav a:hover {
 .home {
   width: 100%;
   height: 100vh;
-  background-color: #0f0f0f;
+  background-image: url(Assets/blackorchid.png);
 }
 
 .name-main {
@@ -203,7 +203,7 @@ nav .navbar-nav a:hover {
   width: 100%;
   height: auto;
   padding: 18vh 0;
-  background-color: aliceblue;
+  background-image: url(Assets/light\ paper\ fibers.png);
 }
 
 .about-title h1 {
@@ -242,7 +242,7 @@ nav .navbar-nav a:hover {
   width: 100%;
   height: auto;
   padding-bottom: 100px;
-  background-color: #0f0f0f;
+  background-image: url(Assets/blackorchid.png);
   text-align: center;
 }
 
@@ -305,7 +305,7 @@ nav .navbar-nav a:hover {
 .contacts {
   width: 100%;
   height: auto;
-  background-color: aliceblue;
+  background-image: url(Assets/light\ paper\ fibers.png);
   padding: 18vh 0;
 }
 
