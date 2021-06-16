@@ -1,6 +1,6 @@
 # Photographer-Website :camera:
 
-**This is a templete of a website, witten in HTML, CSS and Javascript.**
+**This is a template of a website, witten in HTML, CSS and Javascript.**
 
 Note: All Photographs :framed_picture:  are taken from Instagram [@professionalism__]
 
